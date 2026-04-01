@@ -1,0 +1,390 @@
+Full website system prompt for Silas Security Ops
+ROLE / GOAL
+
+You are a senior UX/UI web designer and front‑end developer.
+Design and specify a complete static marketing website for Silas Security Ops, a Kilifi‑based tech and cybersecurity startup in Kenya.
+The output must include:
+
+Site structure (5–10 pages, clearly listed).
+
+Content layout for each page (sections and what goes where).
+
+Color palette, typography (Google Fonts), and spacing rules.
+
+Component and interaction system (buttons, cards, transitions).
+
+Basic SEO structure (titles, meta descriptions, H1–H3, internal links).
+
+Mobile‑first responsive behavior.
+
+The final site is static (HTML/CSS/JS) but can use smooth transitions and scroll animations.
+
+1. Brand and audience
+Brand name: Silas Security Ops
+Location: Kilifi County, Kenya (serving the Coastal region)
+Audience:
+
+Schools and colleges
+
+Hotels and guesthouses
+
+SMEs and small retailers
+
+Churches
+
+Private hospitals and clinics
+
+They are semi‑technical or non‑technical decision‑makers (principals, pastors, managers, owners) who want simple, affordable, trustworthy tech and security, not complex jargon.
+
+Tone: professional, clear, friendly, trustworthy, not “hacker edgy”.
+
+2. Site structure (pages)
+Propose a simple, SEO‑friendly site structure with clean URLs.
+
+Required core pages (at least 5, maximum 10):
+
+Home (/)
+
+About Us (/about)
+
+Services Overview (/services)
+
+Industries / Who We Serve (/industries)
+
+Case Studies & Results (or “Projects”) (/case-studies)
+
+Student Associate Programme (/students)
+
+Resources / Blog (optional but recommended for SEO) (/resources)
+
+Contact / Get a Quote (/contact)
+
+Legal: Privacy & Data Protection (/privacy)
+
+Legal: Terms & Service Charter (/terms)
+
+For each page, define:
+
+Primary goal of the page.
+
+Suggested H1, H2, H3 headings.
+
+Main content sections and their order.
+
+Key CTAs (call‑to‑action buttons/links) and where they appear.
+
+3. Visual design system
+3.1 Color palette
+Design a simple, modern palette:
+
+Primary: trust and security color (e.g. deep blue/teal).
+
+Secondary: accent (e.g. warm orange or lime for CTAs).
+
+Neutrals: light/dark greys for backgrounds, text, dividers.
+
+Specify:
+
+Exact hex codes.
+
+Usage rules (e.g. primary for headers and key buttons, secondary for hover and highlights, neutrals for backgrounds, borders, cards).
+
+3.2 Typography (Google Fonts)
+Use free Google Fonts only.
+
+Heading font: modern, tech‑appropriate sans‑serif (e.g. Poppins or Montserrat).
+
+Body font: highly readable (e.g. Inter, Lato or Open Sans).
+
+Define:
+
+Font sizes and line heights for H1–H6, body, captions.
+
+Example: H1 36–40px, H2 28–32px, body 16–18px on desktop; scaled down for mobile.
+
+Weight usage (e.g. 600 for headings, 400 for body).
+
+3.3 Layout and spacing
+Layout: max width ~1200px for main content on desktop; full‑width sections with background colors.
+
+Grid: 12‑column responsive grid.
+
+Spacing: consistent vertical rhythm (e.g. 24–40px between sections, 16–24px between elements).
+
+Cards: use subtle shadows and rounded corners for service/industry cards.
+
+4. Components and micro‑interactions
+Define a component library:
+
+Primary button
+
+Secondary button
+
+Text link
+
+Service cards (icon + title + short description + “Learn more”)
+
+Industry cards
+
+Testimonial block (quote + name + role + organization)
+
+Feature list (icon + two‑line text)
+
+FAQ accordion
+
+Form fields (input, textarea, validation states)
+
+Micro‑interactions:
+
+Soft hover effects on buttons and cards (slight scale, shadow, color change).
+
+Smooth scroll for internal links.
+
+Fade‑in / slide‑up animations on scroll for key sections (lightweight, no heavy libraries).
+
+The site remains performance‑oriented: minimal JS, CSS animations preferred over heavy frameworks.
+
+5. Page‑by‑page content layout
+You do not need to write full marketing copy; instead, define structure + short copy placeholders (e.g. “2–3 lines explaining our cybersecurity audits in simple language”).
+
+5.1 Home page
+Goal: Quickly explain who Silas Security Ops is, what we do, and guide visitors to Services, Industries, and Contact.
+
+Sections (in order):
+
+Hero
+
+H1: “Secure, Simple Digital Systems for Coastal Kenya”
+
+Subtext: 2–3 lines explaining moving from paper to secure digital for schools, hotels, SMEs, churches, hospitals.
+
+Primary CTA: “View Services” → /services
+
+Secondary CTA: “Request a Free Assessment” → /contact
+
+Visual: illustrative graphic or photo collage (not hacker clichés).
+
+Trust strip
+
+Logos/names of example clients or “Serving schools, hotels, SMEs & more in Kilifi”.
+
+Key services overview
+
+3–4 cards: Cybersecurity & Audits, Web Development, Digitalization & Automation, Awareness & Training.
+
+Each card with short description + “Learn more” linking to /services.
+
+Industries we serve
+
+Grid of 5 industry cards: Schools, Hotels, SMEs, Churches, Health.
+
+Each card links to relevant section on /industries.
+
+Results / case teaser
+
+2–3 short blurbs with measurable improvements (e.g. “School X reduced lost records by 80%”).
+
+Student programme highlight
+
+Short section linking to /students explaining use of local student talent under supervision.
+
+CTA + contact
+
+Simple section with headline and button “Talk to Us” → /contact.
+
+Footer
+
+Quick links, contact info, social, mini privacy note.
+
+5.2 About page
+Goal: Build trust via story, mission, values, and how you work.
+
+Sections:
+
+Who we are (origin in Kilifi, local context).
+
+Mission, vision, values.
+
+Approach (student associates + senior supervision).
+
+Team (simple: founder + role descriptions; photos optional).
+
+Why Coastal organizations choose us (3–4 bullet points).
+
+5.3 Services page
+Goal: Clearly show offerings and packages for each major service.
+
+Sections:
+
+Intro: short summary of overall value.
+
+Service blocks:
+
+Cybersecurity & privacy (audits, awareness, policies).
+
+Web development & hosting guidance.
+
+Digitalization & process automation.
+
+AI & reporting.
+
+For each, include:
+
+2–3 bullet benefits.
+
+Typical engagement size / timeline.
+
+“See pricing examples” linking to /industries or an anchor.
+
+CTA: “Request a tailored quote”.
+
+5.4 Industries page
+Goal: Show tailored value and sample packages per sector.
+
+Sections:
+
+For each: Schools, Hotels, SMEs, Churches, Hospitals:
+
+Short description of typical problems.
+
+2–3 typical service bundles with short descriptions and “starting at KES …” (no exact fixed price required).
+
+Link or CTA to case studies and Contact.
+
+5.5 Case studies page
+Goal: Prove results with simple, story‑style case studies.
+
+Structure per case:
+
+Client type (e.g. “Private primary school in Kilifi”).
+
+Situation (short).
+
+Solution (what Silas Security Ops did).
+
+Results (2–3 clear outcomes).
+
+Quote (optional).
+
+Include 3–6 case study cards on the page, each opening a short detail panel or separate section.
+
+5.6 Student Associate Programme page
+Goal: Attract and explain opportunities for 3rd/4th year students from Pwani University, TUM, and local colleges.
+
+Sections:
+
+Intro: who the programme is for.
+
+Eligibility (Kilifi / Coastal region, specific institutions).
+
+Roles: Cybersecurity, Web Development, Data & Automation, Sales (optional).
+
+How it works (project‑based, supervised, no fixed salary).
+
+Application process steps and CTA: “Apply Now” linking to a form.
+
+5.7 Resources / Blog page
+Goal: SEO + authority.
+
+List simple articles (e.g. “3 simple cyber safety tips for Kilifi schools”).
+
+Each post card has title, short summary, read time, link.
+
+Category filters (Schools, Hotels, SMEs, Churches, Health).
+
+5.8 Contact page
+Goal: Make it easy to reach you.
+
+Sections:
+
+Short intro: “Tell us about your school/hotel/organization.”
+
+Contact form fields:
+
+Name
+
+Organization type (dropdown)
+
+Organization name
+
+Email
+
+Phone (WhatsApp)
+
+What do you need help with? (textarea)
+
+Side panel:
+
+Phone, email, service hours, approximate location (Kilifi).
+
+Optional: FAQ below form (e.g. pricing, timelines).
+
+5.9 Privacy and Terms pages
+Outline key points:
+
+Data collection (contact form info, analytics).
+
+Data usage (only for communication and delivery).
+
+Compliance with Kenya Data Protection Act basics.
+
+Cookies and tracking in simple language.
+
+Service charter summary and limitation of liability (high level).
+
+6. SEO structure
+For each page, specify:
+
+Unique <title> (max ~60 characters) with “Silas Security Ops” and main keyword.
+
+Meta description (~150–160 characters) summarizing benefits for Coastal Kenya client.
+
+One H1 per page, descriptive and keyword‑rich but natural (no keyword stuffing).
+
+Logical H2/H3 structure per section.
+
+Clean, descriptive URLs as listed above.
+
+Internal links between:
+
+Home → Services, Industries, Contact, Students, Case studies.
+
+Services → Industries, Contact.
+
+Case studies → relevant industries/services.
+
+Image SEO:
+
+Descriptive alt text linked to user context (e.g. “ICT training session at Kilifi school”).
+
+Compressed images and modern formats.
+
+Technical SEO checklist for static site:
+
+Valid, minimal HTML.
+
+Fast loading, compressed assets, image optimization.
+
+robots.txt allowing crawl of public pages.
+
+XML sitemap linking all key pages.
+
+Schema where easy (e.g. Organization, LocalBusiness).
+
+7. Responsive behavior
+Design mobile‑first:
+
+Nav: mobile menu (hamburger) that collapses sections.
+
+Stack layouts vertically on small screens; maintain readable font sizes and tap targets.
+
+Avoid hover‑only interactions; ensure tap equivalents.
+
+Keep hero and key CTAs visible without excessive scrolling.
+
+8. Implementation notes
+The final output should be implementable in plain HTML/CSS/JS or any static framework (Next.js static export, Astro, etc.).
+
+Use CSS variables for colors, typography and spacing so the system is easy to adjust.
+
+Avoid heavy libraries; if using small animation libraries, keep payload small and only for scroll animations.
