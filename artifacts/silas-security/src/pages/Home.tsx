@@ -116,8 +116,8 @@ export default function Home() {
         </p>
         <div className="relative flex overflow-hidden">
           {/* Fade edges */}
-          <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-primary to-transparent z-10 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-primary to-transparent z-10 pointer-events-none" />
+          <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-primary to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-primary to-transparent z-10 pointer-events-none" />
 
           {/* Scrolling track — duplicated for seamless loop */}
           <div className="flex animate-marquee whitespace-nowrap">
@@ -165,53 +165,38 @@ export default function Home() {
       </section>
 
       {/* Key Services */}
-      <section className="py-20 md:py-32 bg-white">
+      <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4 md:px-6">
-          <motion.div {...fadeInUp} className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Everything you need to operate digitally, <span className="text-primary">securely</span>.</h2>
-            <p className="text-slate-600 text-lg">We build solutions tailored to the real needs of local organizations. No jargon, just results.</p>
+          <motion.div {...fadeInUp} className="text-center max-w-2xl mx-auto mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-3">Everything you need to operate digitally, <span className="text-primary">securely</span>.</h2>
+            <p className="text-slate-500">Tailored solutions for organizations in Kilifi and Coastal Kenya.</p>
           </motion.div>
 
-          <motion.div 
-            variants={stagger}
-            initial="initial"
-            whileInView="whileInView"
-            viewport={{ once: true, margin: "-100px" }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-          >
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              {
-                icon: ShieldCheck,
-                title: "Cybersecurity Audits",
-                desc: "We find and fix vulnerabilities in your network, devices, and data storage before they become costly problems."
-              },
-              {
-                icon: Smartphone,
-                title: "Web & App Development",
-                desc: "Professional websites, portals, and mobile-friendly applications that make your organization look world-class."
-              },
-              {
-                icon: Database,
-                title: "Digitalization & Automation",
-                desc: "Move from paper to digital. We set up automated workflows that save your staff hours of manual work every week."
-              }
-            ].map((service, i) => (
-              <motion.div key={i} variants={item}>
-                <Card className="h-full border-slate-100 shadow-sm hover:shadow-md transition-shadow group">
-                  <CardContent className="p-8">
-                    <div className="w-14 h-14 bg-primary/5 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors text-primary">
-                      <service.icon className="w-7 h-7" />
+              { img: "/svc-cybersecurity.png", title: "Cybersecurity & Audits", desc: "Vulnerability scanning, network hardening, and staff awareness training." },
+              { img: "/svc-webdev.png", title: "Web & App Development", desc: "Custom portals, websites, and mobile-friendly apps for your organization." },
+              { img: "/svc-automation.png", title: "Digitalization & Automation", desc: "Paper-to-digital migration, invoicing, and cloud file storage setup." },
+              { img: "/svc-ai.png", title: "AI & Reporting", desc: "Clear dashboards, financial reporting, and AI-assisted workflow setup." },
+            ].map((svc, i) => (
+              <motion.div key={i} {...fadeInUp} transition={{ delay: i * 0.08 }}>
+                <Link href="/services">
+                  <div className="group rounded-2xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-md transition-all bg-white h-full flex flex-col">
+                    <div className="overflow-hidden h-44">
+                      <img src={svc.img} alt={svc.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                     </div>
-                    <h3 className="text-xl font-bold mb-3">{service.title}</h3>
-                    <p className="text-slate-600 mb-6 leading-relaxed">{service.desc}</p>
-                    <Link href="/services" className="inline-flex items-center text-primary font-medium group-hover:text-accent transition-colors">
-                      Learn more <ArrowRight className="w-4 h-4 ml-1" />
-                    </Link>
-                  </CardContent>
-                </Card>
+                    <div className="p-5 flex flex-col flex-1">
+                      <h3 className="font-bold text-slate-900 mb-2">{svc.title}</h3>
+                      <p className="text-slate-500 text-sm leading-relaxed flex-1">{svc.desc}</p>
+                      <span className="inline-flex items-center text-primary text-sm font-medium mt-4 group-hover:text-accent transition-colors">
+                        Learn more <ArrowRight className="w-3.5 h-3.5 ml-1" />
+                      </span>
+                    </div>
+                  </div>
+                </Link>
               </motion.div>
             ))}
-          </motion.div>
+          </div>
         </div>
       </section>
 
