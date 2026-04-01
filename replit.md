@@ -1,5 +1,23 @@
 # Workspace
 
+## Silas Security Ops Website
+
+A complete multi-page static marketing website for Silas Security Ops (Kilifi, Kenya).
+
+### Artifact: `artifacts/silas-security` (react-vite, previewPath: `/`)
+
+**Pages:** Home, About, Services, Industries, Case Studies, Students, Contact
+
+**Key features:**
+- Hero section with Kilifi coastal network image (`public/kilifi-hero.png`)
+- Infinite scrolling marquee trust strip (Schools, Hospitality, SMEs, Churches, Clinics)
+- Framer Motion scroll animations throughout
+- Mobile-responsive with hamburger nav
+- Contact form with WhatsApp integration (0713121435)
+- All content is static/hardcoded — no backend
+
+**Contact:** cyberwiseafrica@gmail.com | 0713121435 | Kilifi County, Kenya
+
 ## Overview
 
 pnpm workspace monorepo using TypeScript. Each package manages its own dependencies.

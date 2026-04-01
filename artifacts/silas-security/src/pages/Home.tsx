@@ -45,22 +45,29 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       {/* Hero Section */}
-      <section className="relative bg-slate-50 pt-20 pb-24 md:pt-32 md:pb-40 overflow-hidden">
-        <div className="absolute top-0 right-0 -translate-y-12 translate-x-1/3 opacity-10 pointer-events-none">
-          <ShieldCheck className="w-96 h-96 text-primary" />
+      <section className="relative bg-slate-900 pt-20 pb-0 md:pt-0 overflow-hidden min-h-[90vh] flex flex-col">
+        {/* Background image */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src="/kilifi-hero.png"
+            alt="Kilifi coastal network visualization"
+            className="w-full h-full object-cover object-center"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/70 to-slate-900/30" />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent" />
         </div>
-        
-        <div className="container mx-auto px-4 md:px-6 relative z-10">
-          <div className="max-w-4xl mx-auto text-center">
+
+        <div className="container mx-auto px-4 md:px-6 relative z-10 flex-1 flex items-center py-24 md:py-40">
+          <div className="max-w-3xl">
             <motion.div 
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary font-medium text-sm mb-6"
+              className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 text-white/90 font-medium text-sm mb-6 border border-white/20 backdrop-blur-sm"
             >
               <span className="relative flex h-2 w-2">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
               </span>
               Trusted Tech Partner in Kilifi County
             </motion.div>
@@ -69,16 +76,16 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-4xl md:text-6xl lg:text-7xl font-bold text-slate-900 leading-[1.1] mb-6"
+              className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-[1.1] mb-6"
             >
-              Secure, Simple <span className="text-primary">Digital Systems</span> for Coastal Kenya
+              Secure, Simple <span className="text-accent">Digital Systems</span> for Coastal Kenya
             </motion.h1>
             
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-lg md:text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed"
+              className="text-lg md:text-xl text-white/80 mb-10 max-w-2xl leading-relaxed"
             >
               We help schools, hotels, SMEs, churches, and clinics go digital safely and affordably. Professional cybersecurity and automation without the big-city price tag.
             </motion.p>
@@ -87,12 +94,12 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.3 }}
-              className="flex flex-col sm:flex-row items-center justify-center gap-4"
+              className="flex flex-col sm:flex-row items-start gap-4"
             >
-              <Button asChild size="lg" className="w-full sm:w-auto h-14 px-8 text-base bg-primary hover:bg-primary/90 text-primary-foreground rounded-full shadow-lg hover:shadow-xl transition-all">
+              <Button asChild size="lg" className="w-full sm:w-auto h-14 px-8 text-base bg-accent hover:bg-accent/90 text-accent-foreground rounded-full shadow-lg hover:shadow-xl transition-all font-semibold">
                 <Link href="/contact">Book a Free Consultation</Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="w-full sm:w-auto h-14 px-8 text-base border-slate-300 hover:bg-slate-100 rounded-full">
+              <Button asChild variant="outline" size="lg" className="w-full sm:w-auto h-14 px-8 text-base border-white/30 text-white hover:bg-white/10 rounded-full backdrop-blur-sm">
                 <Link href="/services">Explore Services</Link>
               </Button>
             </motion.div>
@@ -100,28 +107,57 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Trust Strip */}
-      <section className="bg-primary py-8">
-        <div className="container mx-auto px-4 md:px-6">
-          <p className="text-center text-primary-foreground/80 font-medium text-sm uppercase tracking-wider mb-6">
-            Serving organizations across Kilifi & the Coastal Region
-          </p>
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-75">
-            <div className="flex items-center gap-2 text-white font-heading font-semibold text-xl">
-              <GraduationCap className="w-6 h-6 text-accent" /> Schools
-            </div>
-            <div className="flex items-center gap-2 text-white font-heading font-semibold text-xl">
-              <Hotel className="w-6 h-6 text-accent" /> Hospitality
-            </div>
-            <div className="flex items-center gap-2 text-white font-heading font-semibold text-xl">
-              <Briefcase className="w-6 h-6 text-accent" /> SMEs
-            </div>
-            <div className="flex items-center gap-2 text-white font-heading font-semibold text-xl">
-              <Church className="w-6 h-6 text-accent" /> Churches
-            </div>
-            <div className="flex items-center gap-2 text-white font-heading font-semibold text-xl">
-              <HeartPulse className="w-6 h-6 text-accent" /> Clinics
-            </div>
+      {/* Trust Strip — Infinite Marquee */}
+      <section className="bg-primary py-5 overflow-hidden">
+        <p className="text-center text-primary-foreground/70 font-medium text-xs uppercase tracking-widest mb-4 px-4">
+          Serving organizations across Kilifi &amp; the Coastal Region
+        </p>
+        <div className="relative flex overflow-hidden">
+          {/* Fade edges */}
+          <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-primary to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-primary to-transparent z-10 pointer-events-none" />
+
+          {/* Scrolling track — duplicated for seamless loop */}
+          <div className="flex animate-marquee whitespace-nowrap">
+            {[
+              { icon: GraduationCap, label: "Schools" },
+              { icon: Hotel, label: "Hospitality" },
+              { icon: Briefcase, label: "SMEs" },
+              { icon: Church, label: "Churches" },
+              { icon: HeartPulse, label: "Clinics" },
+              { icon: GraduationCap, label: "Schools" },
+              { icon: Hotel, label: "Hospitality" },
+              { icon: Briefcase, label: "SMEs" },
+              { icon: Church, label: "Churches" },
+              { icon: HeartPulse, label: "Clinics" },
+            ].map((item, i) => (
+              <span key={i} className="inline-flex items-center gap-2 mx-10 text-white font-heading font-semibold text-xl">
+                <item.icon className="w-6 h-6 text-accent flex-shrink-0" />
+                {item.label}
+                <span className="ml-10 w-1.5 h-1.5 rounded-full bg-accent/60 inline-block" />
+              </span>
+            ))}
+          </div>
+          {/* Duplicate for seamless loop */}
+          <div className="flex animate-marquee whitespace-nowrap" aria-hidden="true">
+            {[
+              { icon: GraduationCap, label: "Schools" },
+              { icon: Hotel, label: "Hospitality" },
+              { icon: Briefcase, label: "SMEs" },
+              { icon: Church, label: "Churches" },
+              { icon: HeartPulse, label: "Clinics" },
+              { icon: GraduationCap, label: "Schools" },
+              { icon: Hotel, label: "Hospitality" },
+              { icon: Briefcase, label: "SMEs" },
+              { icon: Church, label: "Churches" },
+              { icon: HeartPulse, label: "Clinics" },
+            ].map((item, i) => (
+              <span key={i} className="inline-flex items-center gap-2 mx-10 text-white font-heading font-semibold text-xl">
+                <item.icon className="w-6 h-6 text-accent flex-shrink-0" />
+                {item.label}
+                <span className="ml-10 w-1.5 h-1.5 rounded-full bg-accent/60 inline-block" />
+              </span>
+            ))}
           </div>
         </div>
       </section>
