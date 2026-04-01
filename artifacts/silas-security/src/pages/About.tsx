@@ -1,13 +1,15 @@
-import { useEffect } from "react";
 import { motion } from "framer-motion";
+import { useSEO } from "@/hooks/useSEO";
 import { ShieldCheck, Target, HeartHandshake, Eye, Users, ChevronRight, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 
 export default function About() {
-  useEffect(() => {
-    document.title = "About Us | Silas Security Ops";
-  }, []);
+  useSEO({
+    title: "About Us | Silas Security Ops",
+    description:
+      "Learn about Silas Security Ops — a Kilifi-based cybersecurity and technology company helping coastal Kenya organizations go digital safely and affordably.",
+  });
 
   const fadeInUp = {
     initial: { opacity: 0, y: 20 },

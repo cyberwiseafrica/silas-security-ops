@@ -1,5 +1,5 @@
-import { useEffect } from "react";
 import { motion } from "framer-motion";
+import { useSEO } from "@/hooks/useSEO";
 import { 
   ShieldAlert, 
   Code2, 
@@ -15,9 +15,11 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 
 export default function Services() {
-  useEffect(() => {
-    document.title = "Our Services | Silas Security Ops";
-  }, []);
+  useSEO({
+    title: "Our Services | Silas Security Ops",
+    description:
+      "Cybersecurity audits, web and app development, business automation, and IT support services tailored for organizations in Kilifi and Coastal Kenya.",
+  });
 
   const fadeInUp = {
     initial: { opacity: 0, y: 20 },

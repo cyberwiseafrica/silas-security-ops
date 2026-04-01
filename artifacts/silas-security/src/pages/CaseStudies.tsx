@@ -1,13 +1,15 @@
-import { useEffect } from "react";
 import { motion } from "framer-motion";
+import { useSEO } from "@/hooks/useSEO";
 import { ArrowUpRight, ShieldCheck, TrendingUp, Clock, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 
 export default function CaseStudies() {
-  useEffect(() => {
-    document.title = "Case Studies | Silas Security Ops";
-  }, []);
+  useSEO({
+    title: "Case Studies | Silas Security Ops",
+    description:
+      "Real results from real clients. See how Silas Security Ops has secured clinics, upgraded hotel networks, and digitized schools across Kilifi and Coastal Kenya.",
+  });
 
   const cases = [
     {

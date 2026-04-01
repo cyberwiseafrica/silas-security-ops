@@ -1,5 +1,5 @@
-import { useEffect } from "react";
 import { Link } from "wouter";
+import { useSEO } from "@/hooks/useSEO";
 import { motion } from "framer-motion";
 import { 
   ShieldCheck, 
@@ -18,9 +18,11 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 export default function Home() {
-  useEffect(() => {
-    document.title = "Silas Security Ops | Secure Digital Systems for Coastal Kenya";
-  }, []);
+  useSEO({
+    title: "Silas Security Ops | Secure Digital Systems for Coastal Kenya",
+    description:
+      "Affordable cybersecurity audits, web development, and digital transformation for schools, hotels, SMEs, churches, and clinics in Kilifi and Coastal Kenya.",
+  });
 
   const fadeInUp = {
     initial: { opacity: 0, y: 20 },

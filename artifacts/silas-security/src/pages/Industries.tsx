@@ -1,5 +1,5 @@
-import { useEffect } from "react";
 import { motion } from "framer-motion";
+import { useSEO } from "@/hooks/useSEO";
 import { 
   GraduationCap, 
   Hotel, 
@@ -13,9 +13,11 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 
 export default function Industries() {
-  useEffect(() => {
-    document.title = "Industries We Serve | Silas Security Ops";
-  }, []);
+  useSEO({
+    title: "Industries We Serve | Silas Security Ops",
+    description:
+      "Silas Security Ops serves schools, hotels, SMEs, churches, and clinics across Kilifi County and the Coastal Kenya region with specialized digital and security solutions.",
+  });
 
   const fadeInUp = {
     initial: { opacity: 0, y: 20 },
