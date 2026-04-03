@@ -52,8 +52,8 @@ export function Footer() {
                 <Phone className="w-5 h-5 text-accent mt-0.5" />
                 <div>
                   <span className="block text-sm text-primary-foreground/60 mb-1">Phone / WhatsApp</span>
-                  <a href="https://wa.me/254713121435" target="_blank" rel="noreferrer" className="hover:text-accent transition-colors">
-                    0713 121 435
+                  <a href="https://wa.me/254790480098?text=Hi%2C%20I%20came%20across%20Silas%20Security%20Ops%20and%20I%27m%20interested%20in%20your%20services.%20Could%20you%20tell%20me%20more%20about%20your%20plans%20and%20pricing%3F" target="_blank" rel="noreferrer" className="hover:text-accent transition-colors">
+                    0790 480 098
                   </a>
                 </div>
               </li>

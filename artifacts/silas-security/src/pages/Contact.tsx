@@ -241,12 +241,12 @@ export default function Contact() {
                       <div>
                         <p className="text-sm text-white/60 mb-1">Phone &amp; WhatsApp</p>
                         <a
-                          href="https://wa.me/254713121435"
+                          href="https://wa.me/254790480098?text=Hi%2C%20I%20came%20across%20Silas%20Security%20Ops%20and%20I%27m%20interested%20in%20your%20services.%20Could%20you%20tell%20me%20more%20about%20your%20plans%20and%20pricing%3F"
                           target="_blank"
                           rel="noreferrer"
                           className="text-lg font-semibold hover:text-accent transition-colors"
                         >
-                          0713 121 435
+                          0790 480 098
                         </a>
                       </div>
                     </div>
@@ -283,7 +283,7 @@ export default function Contact() {
                     asChild
                     className="w-full bg-[#25D366] hover:bg-[#20bd5a] text-white rounded-xl h-14 border-none flex gap-2"
                   >
-                    <a href="https://wa.me/254713121435" target="_blank" rel="noreferrer">
+                    <a href="https://wa.me/254790480098?text=Hi%2C%20I%20came%20across%20Silas%20Security%20Ops%20and%20I%27m%20interested%20in%20your%20services.%20Could%20you%20tell%20me%20more%20about%20your%20plans%20and%20pricing%3F" target="_blank" rel="noreferrer">
                       <MessageCircle className="w-5 h-5" /> Chat on WhatsApp
                     </a>
                   </Button>

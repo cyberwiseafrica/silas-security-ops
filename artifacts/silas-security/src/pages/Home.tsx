@@ -307,7 +307,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button asChild size="lg" className="h-14 px-8 bg-accent text-accent-foreground hover:bg-accent/90 rounded-full text-base font-semibold shadow-lg">
-                <a href="https://wa.me/254713121435" target="_blank" rel="noreferrer">
+                <a href="https://wa.me/254790480098?text=Hi%2C%20I%20came%20across%20Silas%20Security%20Ops%20and%20I%27m%20interested%20in%20your%20services.%20Could%20you%20tell%20me%20more%20about%20your%20plans%20and%20pricing%3F" target="_blank" rel="noreferrer">
                   Chat on WhatsApp
                 </a>
               </Button>
