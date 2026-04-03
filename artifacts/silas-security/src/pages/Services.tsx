@@ -31,6 +31,7 @@ export default function Services() {
   const services = [
     {
       id: "cybersecurity",
+      img: "/svc-cybersecurity.png",
       icon: ShieldAlert,
       title: "Cybersecurity & Audits",
       desc: "Protect your sensitive data, patient records, and financial information from unauthorized access and ransomware.",
@@ -43,6 +44,7 @@ export default function Services() {
     },
     {
       id: "development",
+      img: "/svc-webdev.png",
       icon: Code2,
       title: "Web & App Development",
       desc: "Professional digital storefronts and internal applications that look great and work perfectly on mobile.",
@@ -55,6 +57,7 @@ export default function Services() {
     },
     {
       id: "automation",
+      img: "/svc-automation.png",
       icon: Workflow,
       title: "Digitalization & Automation",
       desc: "Move away from paper records and manual data entry. We set up systems that save your team hours every week.",
@@ -67,6 +70,7 @@ export default function Services() {
     },
     {
       id: "analytics",
+      img: "/svc-ai.png",
       icon: LineChart,
       title: "AI & Reporting",
       desc: "Make better decisions with clear dashboards that show exactly how your organization is performing.",
@@ -131,12 +135,12 @@ export default function Services() {
                 className={`flex flex-col ${index % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} gap-12 lg:gap-20 items-center`}
               >
                 <div className="md:w-1/2 w-full">
-                  <div className="aspect-[4/3] bg-slate-50 rounded-3xl border border-slate-100 flex items-center justify-center shadow-inner relative overflow-hidden group">
-                    <div className="absolute inset-0 bg-primary/5 group-hover:bg-primary/10 transition-colors"></div>
-                    <service.icon className="w-32 h-32 text-primary opacity-20 group-hover:scale-110 transition-transform duration-500" />
-                    <div className="absolute bottom-8 left-8 right-8 bg-white/90 backdrop-blur p-4 rounded-xl shadow-sm opacity-0 group-hover:opacity-100 transition-opacity translate-y-4 group-hover:translate-y-0 duration-300">
-                      <p className="font-semibold text-primary text-center">Custom solutions tailored to you</p>
-                    </div>
+                  <div className="rounded-3xl overflow-hidden shadow-lg border border-slate-100">
+                    <img
+                      src={service.img}
+                      alt={service.title}
+                      className="w-full h-64 md:h-80 object-cover"
+                    />
                   </div>
                 </div>
                 
