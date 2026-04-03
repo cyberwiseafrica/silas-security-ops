@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
 import { useSEO } from "@/hooks/useSEO";
-import { ShieldCheck, Target, HeartHandshake, Eye, Users, ChevronRight, CheckCircle2 } from "lucide-react";
+import { ShieldCheck, Target, HeartHandshake, Eye, Users, ChevronRight, CheckCircle2, Wifi, Bot, GraduationCap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 
 export default function About() {
   useSEO({
-    title: "About Us | Silas Security Ops",
+    title: "About Us | Silas Security Ops — Kilifi Cybersecurity Startup",
     description:
-      "Learn about Silas Security Ops — a Kilifi-based cybersecurity and technology company helping coastal Kenya organizations go digital safely and affordably.",
+      "Founded by Milton Silas, a Cisco-certified cybersecurity instructor and AI automation expert based in Kilifi, Kenya. Learn how Silas Security Ops is shaping Kilifi's digital economy.",
   });
 
   const fadeInUp = {
@@ -132,6 +132,71 @@ export default function About() {
                     <ShieldCheck className="w-20 h-20 text-accent mx-auto mb-6 opacity-90" />
                     <h3 className="text-2xl font-bold text-white mb-2">Secure. Simple. Local.</h3>
                     <p className="text-white/80">Your tech partner in Kilifi.</p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Founder Section */}
+      <section className="py-20 md:py-32 bg-white">
+        <div className="container mx-auto px-4 md:px-6">
+          <motion.div {...fadeInUp} className="text-center mb-12">
+            <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary font-medium text-sm mb-4">
+              Meet the Founder
+            </span>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900">The Person Behind the Mission</h2>
+          </motion.div>
+
+          <div className="flex flex-col lg:flex-row gap-12 items-center max-w-5xl mx-auto">
+            {/* Photo */}
+            <motion.div
+              {...fadeInUp}
+              className="lg:w-2/5 w-full flex-shrink-0"
+            >
+              <div className="rounded-3xl overflow-hidden shadow-xl border border-slate-100 aspect-[3/4] max-w-sm mx-auto">
+                <img
+                  src="/milton-silas.jpg"
+                  alt="Milton Silas — Founder of Silas Security Ops, cybersecurity instructor based in Kilifi, Kenya"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+            </motion.div>
+
+            {/* Bio */}
+            <motion.div {...fadeInUp} transition={{ delay: 0.15 }} className="lg:w-3/5">
+              <h3 className="text-2xl md:text-3xl font-bold text-slate-900 mb-1">Milton Silas</h3>
+              <p className="text-primary font-semibold text-base mb-6">Founder · Kilifi, Kenya</p>
+
+              <p className="text-slate-600 text-lg leading-relaxed mb-6">
+                Milton is a cybersecurity enthusiast, tech advocate, and Cisco-certified instructor with deep expertise in AI automation and digital systems. Based in Kilifi, he founded Silas Security Ops with a clear purpose — to bridge the digital divide along Kenya's Coast by making professional-grade technology accessible to organizations that have historically been left behind.
+              </p>
+              <p className="text-slate-600 leading-relaxed mb-8">
+                His focus goes beyond just securing networks. Milton is actively shaping Kilifi's digital economy by mentoring students and recent graduates, equipping the next generation of tech professionals from within the community itself.
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                <div className="flex items-start gap-3 bg-slate-50 rounded-2xl p-4">
+                  <ShieldCheck className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-semibold text-slate-800 text-sm">Cisco Instructor</p>
+                    <p className="text-slate-500 text-xs">Certified & teaching</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3 bg-slate-50 rounded-2xl p-4">
+                  <Bot className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-semibold text-slate-800 text-sm">AI Automation</p>
+                    <p className="text-slate-500 text-xs">Workflow & intelligence</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3 bg-slate-50 rounded-2xl p-4">
+                  <GraduationCap className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
+                  <div>
+                    <p className="font-semibold text-slate-800 text-sm">Youth Mentor</p>
+                    <p className="text-slate-500 text-xs">Kilifi graduates</p>
                   </div>
                 </div>
               </div>
